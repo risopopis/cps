@@ -1,0 +1,28 @@
+.disclamer{
+margin-left: 16px;
+margin-right: 50px;
+   &__description{
+    font-family: 'TTLakes-regular';
+    font-size: 14px;
+    line-height:20px;
+   
+   }
+   &__link{
+    font-family: 'TTLakes-Bold';
+    text-decoration: none;
+    color: black;
+    &::after{
+        content: '';
+        background-image: url('../img/dropdown.svg');
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        margin-left: 10px;
+        position: relative;
+        bottom: -15px;
+        background-repeat: no-repeat;
+        
+    }
+   }
+
+}

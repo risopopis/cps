@@ -1,0 +1,19 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+
+    &_email {
+        font-family: 'TTLakes-Medium';
+        margin: 12px 0;
+        text-decoration: none;
+        color: black;
+    }
+
+    &_phone {
+        font-family: 'TTLakes-Bold';
+        margin-bottom: 12px;
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,14 @@
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor:pointer;
+        
+        @media (min-width: 1440px) {
+            
+        }
+        &__link_hidden {
+            display: none;
+        }
+
+}

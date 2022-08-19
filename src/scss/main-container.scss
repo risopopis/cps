@@ -1,0 +1,190 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $idk-white;
+    padding: 16px;
+        @media (min-width: 768px) {
+           
+            
+        }
+        @media (min-width: 1440px) {
+            position: relative;
+            left: 320px;
+            width: 1220px;
+            padding-right: 24px;
+            margin:0;
+        }
+
+    &__body {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+        }
+        @media (min-width: 1440px) {
+            
+        }
+    }
+    
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        @media (min-width: 1440px) {
+            height: 130px;
+        }
+    }
+
+    &__title{
+        font-family: 'TTLakes-Bold';
+        font-size: 14px;
+        margin: 0 16px;
+        width: 100%;
+            &::before{
+                content: ' ';
+                border-left: 4px solid $angel-blue;
+                border-radius: 1px;
+                height: 40px;
+                left: 0;
+                position: absolute;
+                margin-top: 14px;
+            }
+        }
+    &__header-pages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 16px;
+        margin-top: 10px;
+        overflow-x: scroll;
+            @media (min-width: 1440px) {
+                display: block;
+                overflow: hidden;
+            }
+    }
+
+    &__item {
+        font-family: 'TTLakes-Regular';
+        border: none;
+        background-color: unset;
+        font-size: 16px;
+        margin-right: 16px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        height: 40px;
+        color: #7E7E82;
+            @media (min-width: 1440px) {
+                height: 40px;
+                
+            }
+    }
+
+    &__item--picked {
+        border: 2px solid $angel-blue;
+        border-radius: 6px;
+        padding: 5px 20px;
+        background-color: white;
+    }
+
+    &__body-about{
+        padding-left: 16px;
+        padding-top: 24px;
+            @media (min-width: 768px) {
+                width: 312px;
+                
+            }
+            @media (min-width: 1440px) {
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                width: 490px;
+        }
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        font-family: 'TTLakes-regular';
+        font-size: 14px;
+        margin-right: 24px;
+        width: 288px;
+            @media (min-width: 1440px) {
+                width: 490px;
+                
+            }
+    }
+
+    &__show-more{
+        display: flex;
+        border: none;
+        background-color: unset;
+        font-family: 'TTLakes-medium';
+        align-self: flex-start;
+        margin-left: 18px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+        font-size: 16px;
+            &::before{
+                content: ' ';
+                background-image: url(../img/icon.svg);
+                width: 8px;
+                height: 10px;
+                position: relative;
+                left: -16px;
+                align-self: center ;
+            }
+    }
+
+    &__section--hidden1{
+        display: none;
+            @media (min-width: 1440px) {
+                display: flex;
+                width: 490px;;
+                flex-direction: column;
+                font-family: 'TTLakes-regular';
+                font-size: 14px;
+                
+            }
+    }
+     
+    
+    &__section--hidden2{
+        display: none;
+          @media (min-width: 1440px)  {
+            display: flex;
+            width: 490px;
+            flex-direction: column;
+            font-family: 'TTLakes-regular';
+            font-size: 14px;
+    }
+}
+    &__image {
+        width: 320px;
+        border-radius: 6px;
+        height: 176px;
+        @media (min-width: 768px) {
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: 24px;
+            width: 360px; 
+            height: 208px;
+        }
+        @media (min-width:1440px) {
+            display: flex;
+            margin-top: 25px;
+            margin-left: auto;
+            border-radius: 6px;
+            width: 523px; 
+            height: 307px;
+            margin-right: 32px;
+        }
+
+}
+
+}
+
+.main-container--filter{
+    filter: opacity(0);
+    filter: brightness(-2);
+}

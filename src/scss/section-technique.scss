@@ -1,0 +1,88 @@
+.section-technique {
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    @media (min-width: 768px) {
+        width: 1220px;
+        height: 100%;
+        margin-top: 50px;
+          }
+       
+        &__header {
+            font-family: 'TTLakes-Medium';
+            font-size: 12px;
+            color: #7E7E82;
+            background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+            margin-bottom: 10px;
+            padding: 16px;
+            width: 100%;
+        }
+
+        
+    &-button-show-more {
+        display: none;
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'TTLakes-medium';
+            background: unset;
+            border: unset;
+            height: 25px;
+            padding: 2px 0;
+            align-self: start;
+            position: relative;
+            top: 15px;
+            margin-left: 16px;
+            cursor: pointer;
+                &::before {
+                    content: " ";
+                    background-image: url('../img/icon2.svg');
+                    width: 7px;
+                    height: 11px;
+                    margin-left: 5px;
+                    margin-right: 16px;
+                }
+    }
+        }
+    &-button-hide {
+        display: none;
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'TTLakes-medium';
+            background: unset;
+            border: unset;
+            height: 25px;
+            padding: 2px 0;
+            align-self: start;
+            position: relative;
+            top: 15px;
+            margin-left: 16px;
+            cursor: pointer;
+                &::before {
+                    content: " ";
+                    background-image: url(../img/icon.svg);
+                    width: 7px;
+                    height: 11px;
+                    margin-left: 5px;
+                    margin-right: 16px;
+                    transform: rotate(180deg);
+                }
+        }
+       }
+    }
+    
+    .button-hide--hidden {
+        display: none;
+    }
+    
+    .section-technique-button-show-more--hidden{
+        display: none;
+    }
+    
+
+
+    

@@ -1,0 +1,99 @@
+$button-color: #FF3E79;
+$angel-blue: #41F6D7;
+$soft-gray: #7E7E82;
+$idk-white: #F8F8F8;
+   .header {
+       display: flex;
+       flex-direction: column;
+       background-color: white;
+        @media (min-width: 1440px) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            height: 88px;
+            border: none;
+            width: 1220px;
+            justify-content: space-between;
+            position: relative;
+            left: 320px;
+            background-color: $idk-white;
+                
+    
+         }   
+       
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 16px;
+            align-items: center;
+            height: 88px;
+            border-bottom: 1px  solid $angel-blue;
+                @media (min-width: 1440px) {
+                    border-bottom: none;
+                    flex-direction: column;
+                }
+        }
+
+        &__main-container {
+            display: flex;
+            flex-direction: row;
+            @media (min-width: 1440px) {
+                display: none;
+
+            }
+
+        }
+
+        &__button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+       
+        }
+
+        &__logo {
+            width: 96px;
+            height: 50px;
+        }
+
+    &__title {
+            font-family: 'TTLakes-Bold';
+            font-size: 14px;
+            padding: 0 16px;
+            width: 100%;
+            background-color: #F8F8F8;
+            &::before {
+                content: ' ';
+                border-left: 4px solid $angel-blue;
+                border-radius: 1px;
+                height: 40px;
+                left: 0;
+                position: absolute;
+                margin-top: 14px;
+            }
+            
+            @media (min-width: 1440px) {
+                width: 500px;
+                margin: 0;
+            }
+        }
+
+        &__button--hidden {
+            display: none;
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+            }
+            @media (min-width: 1440px) {
+                display: none;
+            }
+        }
+    }
+
+    .header--filter{
+        filter: opacity(0.0);
+        filter: brightness(-2);
+    }

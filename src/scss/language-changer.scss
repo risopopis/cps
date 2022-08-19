@@ -1,0 +1,17 @@
+.language-changer{
+    list-style: none;
+    display: flex;
+}
+
+.button-lang {
+    border: none;
+    background-color: unset;
+    font-family: 'TTLakes-Regular';
+    transition: 0.3s;
+        &:hover {
+            transform: scale(1.2);
+        }
+        &_picked {
+            color:  #7E7E82;
+}
+}

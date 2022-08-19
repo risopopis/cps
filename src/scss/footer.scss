@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: TTLakes-medium;
+    font-size: 14px;
+    color: $soft-gray;
+    border-top: 0.5px solid $angel-blue;
+    margin-top: 40px;
+    &__privacy{
+        text-decoration: none;
+        color: $soft-gray;
+    }
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 20px;
+        &__reserved{
+            text-align: left;
+            
+        }
+        &__disclamer{
+            text-align: right;
+        }
+    }
+    @media (min-width: 1440px) {
+        margin-left: 320px;
+    }
+}
+
+.footer--filter{
+    filter: opacity(0.96);
+}

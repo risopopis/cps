@@ -1,0 +1,126 @@
+
+.swiper{
+  &-technique{
+        display: flex;
+        width: 100%;
+        height: 100%; 
+        padding: 16px;
+       flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    
+  }
+        &-wrapper-technique{
+          @media (min-width: 768px) {
+          display: flex;
+          flex-wrap: wrap;
+       
+          @media (min-width: 1440px) {
+            margin-right: auto;
+            height: 190px;
+            justify-content: center;
+          }
+        }
+        }
+      
+&-pagination {
+    display: flex; 
+    margin: 30px auto;
+    justify-content: center; 
+   
+    &-bullet {
+      height: 12px; 
+      width: 12px;  
+      background: #DDD;  
+      border-radius: 50%; 
+      margin: 0 6px;
+
+        &-active {
+          background: #B5B6BC; 
+        }
+      @media (min-width:  768px) {
+        display: none;
+      }
+  }
+}
+  &-wrapper-technique--height{
+    height: 300px;
+  }
+ 
+
+  &-slide{
+    border-radius: 6px;
+    @media (min-width: 768px) {
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+  }
+    &-technique  {
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $soft-white;
+    max-width: 240px;
+    margin-right: 16px;
+    height: 160px;
+    background-color: white;
+
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+  }
+}  
+    &-title{
+      font-family: 'TTLakes-Medium';
+      align-self: flex-start;
+      margin-top: 16px;
+      margin-left: 16px;
+    }
+}
+
+}
+
+.slider{
+    &-technique-link {
+        display: flex;
+        border: 2px solid $button-color;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        margin-left: auto;
+        position: relative;
+        top: 30px;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        
+      }
+        &::before {
+          content: '';
+          background-image: url('../img/dropdown.svg');
+          background-repeat: no-repeat;
+          width: 8px;
+          height: 12px;
+          margin-top: 15px;
+      
+      }
+      }
+}
+
+.slider__items-technique {
+  display: flex;
+  width: 1220px;
+  flex-wrap: wrap;
+  height: 185px;
+  margin-bottom: 16px;
+  @media (min-width: 1440px) {
+    margin-right: auto;
+    height: 190px;
+    justify-content: center;
+  }
+}
+
+.slider__items-technique--hidden{
+  display: none;
+}

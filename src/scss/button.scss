@@ -1,0 +1,171 @@
+$soft-white: #EAEAEA; 
+.button {
+    background: none;
+    border: none;
+    margin-right: 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+        &::after {
+            display: inline-block;
+            content: ' ';
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: $button-color;
+            border-radius: 20px;
+            
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+    
+    .button-list {
+        &::after{
+        background-image: url(../img/lines.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        }
+}
+
+    .button-repair {
+        &::before{
+            content: ' ';
+            border-left: 2px solid $soft-white;
+            border-radius: 1px;
+            position: relative;
+            left: -20px;
+            padding-top: 20px;
+            bottom: 5px;
+        @media (min-width: 1440px) {
+            display: none;  
+            }
+        }
+        &::after{
+            background-image:url(../img/repair.svg);
+            border: none;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        }
+    
+
+    .button-checkstatus {
+        @media (min-width: 1440px) {
+            margin-left: 80px;
+        }
+        &::after{
+        background-image: url(../img/chekstatus.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    }
+    .button-profile {
+        &::after{
+        background-image: url(../img/profile.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin-right: 40px;
+    }
+}
+
+    .button-сall {
+        &::after{
+        background-image: url(../img/call.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        }
+    }
+
+    .button-chat {
+        &::after{
+        background-image: url(../img/chat.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+    .text--hidden {
+        display: none;
+
+        @media (min-width:1440px) {
+            display: flex;
+            flex-direction: row;
+            margin-right: 16px;
+            font-family: 'TTLakes-medium';
+            position: relative;
+            right: 100px;
+            top: 30px;
+            margin-left: 24px;
+        }
+    }
+
+    .button-close {
+        &::after{
+        display: inline-block;
+        background-image: url(../img/close.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;   
+        }
+        @media (min-width: 1440px) {
+            display: none;
+        }
+    }
+
+    .button.button-close-feedback,
+    .button.button-close-call{
+        transform: none;
+        margin-top: 16px;
+        &::after{
+            display: block;
+            background-image: url(../img/close.svg);
+            border: none;
+            background-repeat: no-repeat;
+            background-position: 50% 50%; 
+    }
+        @media (min-width:768px) {
+            display: block;
+            margin-left: 0;
+            margin-right: auto;
+            &::after{
+                display: block;
+                background-image: url(../img/close.svg);
+                border: none;
+                background-repeat: no-repeat;
+                background-position: 50% 50%; 
+                position: absolute;
+                left: -80px; 
+                margin-top: 16px;
+        }
+        }
+        @media (min-width: 1440px) {
+        &::after{
+            display: inline-block;
+    }
+        }
+}
+    
+    .button-search {
+        &::after{
+        background-image:url(../img/search.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+    
+    .button-call{
+        &::after {
+        background-image:url(../img/call.svg);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
