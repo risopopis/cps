@@ -84,35 +84,29 @@ buttonMoreTec.addEventListener('click', function () {
   let feedBack = document.querySelector('.modal-feedback');
   let openFdbck = document.querySelector('.button-chat');
   let closeFdbck = document.querySelector('.button-close-feedback');
+  let blockWhite = document.querySelector('.block-white');
 
   openFdbck.addEventListener('click', function(){
     feedBack.classList.remove('modal-feedback--hidden');
-    mainCont.classList.add('main-container--filter');
-    header.classList.add('header--filter');
-    menu.classList.add('navigation--filter');
+     blockWhite.classList.remove('block-white--hidden');
   })
 
   closeFdbck.addEventListener('click', function (){
     feedBack.classList.add('modal-feedback--hidden');
-    mainCont.classList.remove('main-container--filter');
-    header.classList.remove('header--filter');
-    menu.classList.remove('navigation--filter');
+    blockWhite.classList.add('block-white--hidden');
   })
 
  let call = document.querySelector('.button-call');
  let callOrder = document.querySelector('.modal-call');
  let closeCall = document.querySelector('.button-close-call')
+ 
 
  call.addEventListener('click', function (){
     callOrder.classList.remove('modal-call--hidden');
-    mainCont.classList.add('main-container--filter');
-    header.classList.add('header--filter');
-    menu.classList.add('navigation--filter');
+    blockWhite.classList.remove('block-white--hidden');
  })
 
  closeCall.addEventListener('click', function (){
   callOrder.classList.add('modal-call--hidden');
-  mainCont.classList.remove('main-container--filter');
-  header.classList.remove('header--filter');
-  menu.classList.remove('navigation--filter');
+  blockWhite.classList.add('block-white--hidden');
 })
